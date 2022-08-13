@@ -2,7 +2,7 @@
 
 .hero {
   max-width: 480px;
-display: block;
+  display: block;
   background-color: rgba(47, 48, 58, 0.4);
   background-image: linear-gradient(
       to right,
@@ -20,16 +20,15 @@ display: block;
   padding-bottom: 118px;
   padding-left: 0;
 
-  @media screen and (min-width:768px) {
+  @media screen and (min-width: 768px) {
     max-width: 768px;
   }
-  @media screen and (min-width:1200px) {
+  @media screen and (min-width: 1200px) {
     max-width: 1600px;
-     padding-top: 200px;
-  padding-right: 0;
-  padding-bottom: 200px;
-  padding-left: 0;
-
+    padding-top: 200px;
+    padding-right: 0;
+    padding-bottom: 200px;
+    padding-left: 0;
   }
 }
 
@@ -43,11 +42,10 @@ display: block;
   margin-top: 0;
   margin-bottom: 30px;
 
-
-@media screen and (min-width:1200px) {
-  font-size: 44px;
-  line-height: 1.36;
-}
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero__button {
@@ -71,50 +69,52 @@ display: block;
 /* Список преимуществ */
 
 .benefits {
-padding-top: 60px;
+  padding-top: 60px;
 
-  @media screen and (min-width:1200px) {
-  padding-top: 94px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
 }
-}
-
 
 .benefits_list {
-padding: 0;
-margin: 0;
+  padding: 0;
+  margin: 0;
 
- @media screen and (min-width:768px){
-   display: flex;
+  @media screen and (min-width: 768px) {
+    display: flex;
     gap: 30px;
     flex-wrap: wrap;
- }
+  }
 
-   @media screen and (min-width:1200px) {
-  display: flex;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  padding-left: 0;
-  margin-top: 0;
-  margin-bottom: 0;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding-left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
 }
-  
-}
-
-
 
 .benefits_item {
-flex-basis: 450px;
-margin-bottom: 30px;
+  flex-basis: 450px;
+  margin-bottom: 30px;
 
- @media screen and (min-width:768px) { 
-  flex-basis: 354px;}
+  &:last-child {
+    margin-bottom: 60px;
+  }
 
-    @media screen and (min-width:1200px) {
-  flex-basis: 270px;}
+  @media screen and (min-width: 768px) {
+    flex-basis: 354px;
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: 270px;
+  }
 }
 
 .benefits_icon {
-
   width: 450px;
   height: 120px;
   background-color: #f5f4fa;
@@ -123,15 +123,17 @@ margin-bottom: 30px;
   justify-content: center;
   align-items: center;
 
-   @media screen and (min-width:480px) { 
+  @media screen and (min-width: 480px) {
     margin-bottom: 30px;
   }
 
-  @media screen and (min-width:768px) { 
-  width: 354px;}
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
 
-    @media screen and (min-width:1200px) {
-  width: 270px;}
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
 }
 
 .benefits_title {
@@ -146,8 +148,9 @@ margin-bottom: 30px;
   margin-bottom: 10px;
   text-align: center;
 
-  @media screen and (min-width:768px) { 
-  text-align: start;}
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }
 
 .benefits_text {
@@ -165,14 +168,15 @@ margin-bottom: 30px;
 .specialization {
   display: none;
 
-   @media screen and (min-width:1200px) {
-  display: contents;}
+  @media screen and (min-width: 1200px) {
+    display: contents;
+  }
 
   padding-top: 94px;
   padding-bottom: 94px;
 }
 .specialization_title {
-  color: var(--main-text-color);
+  color: $main-text-color;
   font-style: normal;
   font-weight: 700;
   font-size: 36px;
@@ -191,7 +195,6 @@ margin-bottom: 30px;
   margin-top: 0;
   margin-bottom: 0;
 }
-
 
 .specialization_uppertitle_wrap {
   position: relative;
@@ -213,168 +216,208 @@ margin-bottom: 30px;
   padding-bottom: 28px;
 }
 
-// /* наша команда */
+/* наша команда */
 
-// .team {
-//   background: #f5f4fa;
-//   padding-top: 94px;
-//   padding-bottom: 94px;
-// }
+.team {
+  background: #f5f4fa;
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-// .team_title {
-//   color: var(--main-text-color);
-//   font-weight: 700;
-//   font-size: 36px;
-//   line-height: 1.16;
-//   text-align: center;
-//   letter-spacing: 0.03em;
-//   margin-top: 0;
-//   margin-bottom: 50px;
-// }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
-// .team_list {
-//   display: flex;
-//   gap: 30px;
-//   justify-content: space-around;
-//   padding-left: 0;
-//   margin-top: 0;
-//   margin-bottom: 0;
-// }
+.team_title {
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 30px;
 
-// .team_card {
-//   background: #ffffff;
-//   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-//     0px 2px 1px rgba(0, 0, 0, 0.2);
-//   border-radius: 0px 0px 4px 4px;
-// }
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
 
-// .team_name_wrap {
-//   padding-top: 30px;
-//   padding-bottom: 30px;
-//   text-align: center;
-// }
+.team_list {
+  padding: 0;
+  margin: 0;
 
-// .team_name {
-//   color: var(--main-text-color);
-//   font-style: normal;
-//   font-weight: 500;
-//   font-size: 16px;
-//   line-height: 1.18;
-//   letter-spacing: 0.03em;
-//   margin-top: 0;
-//   margin-bottom: 10px;
-// }
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-around;
+  }
+}
 
-// .team_position {
-//   color: var(--secondary-text-color);
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: 16px;
-//   line-height: 1.18;
-//   letter-spacing: 0.03em;
-//   margin-top: 0;
-//   margin-bottom: 16px;
-// }
+.team_item {
+  margin-bottom: 30px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 
-// .social-list {
-//   display: flex;
-//   gap: 10px;
-//   justify-content: center;
-//   padding-left: 0;
-//   margin-top: 0;
-//   margin-bottom: 0;
-// }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 2 * 15рх) / 2);
+    margin-bottom: 0;
+  }
+}
 
-// .social_link {
-//   width: 44px;
-//   height: 44px;
-//   color: #afb1b8;
-//   border-radius: 50%;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-//     background 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.team_card {
+  background: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
 
-// &:hover,
-// &:focus {
-//   background-color: $accent-color;
-//   color: #ffffff;
-// }
+.team_name_wrap {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
 
-// }
+.team_name {
+  color: $main-text-color;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
 
+.team_position {
+  color: $secondary-text-color;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.18;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
 
+.social-list {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
 
-// .social_icon {
-//   fill: currentColor;
+.social_link {
+  width: 44px;
+  height: 44px;
+  color: #afb1b8;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-// &:hover,
-// &:focus .social_icon {
-//   fill: currentColor;
-// }
-// }
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: #ffffff;
+  }
+}
 
-// /* клиенты */
+.social_icon {
+  fill: currentColor;
 
-// .clients {
-//   padding-top: 94px;
-//   padding-bottom: 94px;
-// }
+  &:hover,
+  &:focus .social_icon {
+    fill: currentColor;
+  }
+}
 
-// .clients-title {
-//   color: var(--main-text-color);
-//   font-weight: 700;
-//   font-size: 36px;
-//   line-height: 1.16;
-//   text-align: center;
-//   letter-spacing: 0.03em;
-//   margin-top: 0;
-//   margin-bottom: 50px;
-// }
+/* клиенты */
 
-// .clients-list {
-//   display: flex;
-//   gap: 30px;
-//   margin-top: 0;
-//   margin-bottom: 0;
-//   padding-left: 0;
-// }
+.clients {
+  padding-top: 60px;
+  padding-bottom: 60px;
 
-// .clients-list-item {
-//   display: flex;
-//   justify-content: center;
-//   text-align: center;
-// }
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
 
-// .clients-link {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   border-radius: 4px;
-//   width: 170px;
-//   height: 92px;
-//   border: 1px solid #afb1b8;
-//   color: #afb1b8;
-//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-//     border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.clients-title {
+  color: var(--main-text-color);
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 30px;
 
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+}
 
-//  &:hover,
-//  &:focus {
-//   border: 1px solid $accent-color;
-//   color: $accent-color;
-// }
+.clients-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 
-// }
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
+}
 
+.clients-list-item {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 
-// .clients-logo {
-//   fill: currentColor;
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  width: 210px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  color: #afb1b8;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-// .clients-link:hover,
-// .clients-link:focus
-//  & {
-//   fill: currentColor;
-// }
-// }
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    color: $accent-color;
+  }
+}
+
+.clients-logo {
+  fill: currentColor;
+
+  .clients-link:hover,
+  .clients-link:focus & {
+    fill: currentColor;
+  }
+}
