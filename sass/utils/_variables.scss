@@ -1,0 +1,15 @@
+$main-text-color: #212121;
+$secondary-text-color: #757575;
+$accent-color: #2196f3;
+$main-font:"Roboto", sans-serif;
+
+
+
+@mixin transition ($tp, $td:250ms, $ttf:cubic-bezier(0.4, 0, 0.2, 1) ) 
+{
+  transition-property: ($tp);
+  transition-duration: ($td);
+  transition-timing-function: ($ttf)
+
+}
+
