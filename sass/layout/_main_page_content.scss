@@ -255,19 +255,26 @@
     gap: 30px;
     justify-content: space-around;
   }
+
+  @media screen and (min-width: 1200px){
+    display: flex;
+    flex-wrap: nowrap;
+  }
 }
 
 .team_item {
   margin-bottom: 30px;
+
   &:last-child {
     margin-bottom: 0;
   }
 
   @media screen and (min-width: 768px) {
-    flex-basis: calc((100% - 2 * 15рх) / 2);
+   flex-basis: calc((100% - 30px) / 2 );
     margin-bottom: 0;
   }
 }
+// calc(( 100% - 1 * 30рх) / 2)
 
 .team_card {
   background: #ffffff;
