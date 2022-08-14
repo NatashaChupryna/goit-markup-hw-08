@@ -79,7 +79,9 @@
             </li>
           </ul>
         </div>
-        <div class="mobile_menu is-open" data-menu>
+
+ <!-- -----------***| Мобильное меню |***---------- -->       
+  <div class="mobile_menu" data-menu>
 
   <button class="mobile_menu__button--close" type="button" data-menu-close>
     <svg class="mobile_menu__icon--close" width="40" height="40">
@@ -87,27 +89,27 @@
   </svg>
 </button>
 
-          <ul class="mobile-nav">
-            <li class="mobile-nav__item">
+   <ul class="mobile-nav">
+          <li class="mobile-nav__item">
               <a
                 href="./index.html"
                 class="link  mobile-nav__link mobile-nav__link--curent"
                 >Студия</a
               >
-            </li>
+          </li>
 
-            <li class="mobile-nav__item">
+          <li class="mobile-nav__item">
               <a href="./Portfolio.html" class=" mobile-nav__link"
                 >Портфолио</a
               >
-            </li>
+          </li>
 
-            <li class="mobile-nav__item">
+          <li class="mobile-nav__item">
               <a href="Контакты" class=" mobile-nav__link">Контакты</a>
-            </li>
-          </ul>
+         </li>
+    </ul>
         
-          <ul class="mobile_contacts">
+    <ul class="mobile_contacts">
             <li class="mobile_contacts__item">
               <a
                 href="mailto:info@devstudio.com"
@@ -119,14 +121,14 @@
               <a href="tel:+380961111111" class="mobile_contacts__link">
                 +38 096 111 11 11</a>
             </li>
-          </ul>
+    </ul>
 
-          <ul class="social_list">
+    <ul class="social_list">
             <li class="socisl_list__item"><a href="" class="socisl_list__link">Instagram</a></li>
             <li class="socisl_list__item"><a href="" class="socisl_list__link"></a>Twitter</li>
             <li class="socisl_list__item"><a href="" class="socisl_list__link"></a>Facebook</li>
             <li class="socisl_list__item"><a href="" class="socisl_list__link"></a>LinkedIn</li>
-          </ul>
+    </ul>
 </div>
       </div>
     </header>
@@ -170,7 +172,7 @@
                   </p>
                 </div>
               </div>
-              <div class="portfolio-title-div">
+              <div class="portfolio-title-div fc">
                 <h2 class="portfolio-title">Технокряк</h2>
                 <p class="portfolio-category">Веб-сайт</p>
               </div>
@@ -335,8 +337,9 @@
       </section>
     </main>
 
-         <footer class="footer">
+             <footer class="footer">
       <div class="container footer-block">
+        <div class="wrap">
         <div class="footer-container">
           <a href="WebStudio" class="logo">
             <span class="logo-first-word">Web</span
@@ -363,7 +366,7 @@
 
         <div>
           <p class="footer-title">присоединяйтесь</p>
-          <ul class="social_list">
+          <ul class="footer_social_list">
             <li>
               <a href="" aria-label="Socialmedia" class="footer-social-link">
                 <svg class="social-link-svg" width="20px" height="20px">
@@ -397,6 +400,7 @@
             </li>
           </ul>
         </div>
+        </div>
         
           <form class="subscribe-form">
           <p class="subscribe-form-title">Подпишитесь на рассылку</p>
@@ -412,5 +416,6 @@
         </form>
       
     </footer>
+    <script src="./menu.js"></script>
   </body>
 </html>
