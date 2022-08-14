@@ -34,13 +34,13 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(1) rotate(0);
   
-  .backdrop.is-hidden & {
-  transform: translate(-50%, -50%) scale(0.2) rotate(45deg);
-}
 }
 }
 
-  .backdrop.is-hidden & {
+.backdrop.is-hidden > .modal {
+  transform: translate(-50%, -50%) scale(0.2) rotate(45deg);
+}
+  .backdrop.is-hidden > .modal {
   transform: scale(0.2) rotate(45deg);
 }
 
