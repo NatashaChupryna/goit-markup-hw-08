@@ -534,12 +534,12 @@ img {
   }
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .nav {
     display: none;
   }
 }
-@media screen and (min-width: 480px) and (min-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767px) and (min-width: 768px) {
   .nav {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -609,7 +609,7 @@ img {
   display: block;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .secondsry-nav {
     display: none;
   }
