@@ -52,7 +52,7 @@
               >
             </li>
 
-            <li class="main-nav__item">
+            <li class="main-nav__item" #contacts>
               <a href="Контакты" class=" main-nav__link">Контакты</a>
             </li>
           </ul>
@@ -93,13 +93,13 @@
           <li class="mobile-nav__item">
               <a
                 href="./index.html"
-                class="link  mobile-nav__link mobile-nav__link--curent"
+                class="link  mobile-nav__link "
                 >Студия</a
               >
           </li>
 
           <li class="mobile-nav__item">
-              <a href="./Portfolio.html" class=" mobile-nav__link"
+              <a href="./Portfolio.html" class=" mobile-nav__link mobile-nav__link--curent"
                 >Портфолио</a
               >
           </li>
@@ -337,9 +337,9 @@
       </section>
     </main>
 
-             <footer class="footer">
+     <footer class="footer" id="contacts">
       <div class="container footer-block">
-       
+        
         <div class="footer-container">
           <a href="WebStudio" class="logo">
             <span class="logo-first-word">Web</span
@@ -364,11 +364,11 @@
           >
         </div>
 
-        <div>
+        <div class="footer-wrap">
           <p class="footer-title">присоединяйтесь</p>
           <ul class="footer_social_list">
             <li>
-              <a href="" aria-label="Socialmedia" class="footer-social-link">
+              <a href="https://www.instagram.com/" aria-label="Socialmedia" class="footer-social-link" target="_blank" rel="noopener noreferrer">
                 <svg class="social-link-svg" width="20px" height="20px">
                   <use href="./image/icons.svg#instagram"></use>
                 </svg>
@@ -376,7 +376,7 @@
             </li>
 
             <li>
-              <a href="" aria-label="Socialmedia" class="footer-social-link">
+              <a href="https://twitter.com/?lang=ru" aria-label="Socialmedia" class="footer-social-link" target="_blank" rel="noopener noreferrer">
                 <svg class="social-link-svg" width="20px" height="20px">
                   <use href="./image/icons.svg#twitter"></use>
                 </svg>
@@ -384,7 +384,7 @@
             </li>
 
             <li>
-              <a href="" aria-label="Socialmedia" class="footer-social-link">
+              <a href="https://uk-ua.facebook.com/" aria-label="Socialmedia" class="footer-social-link" target="_blank" rel="noopener noreferrer">
                 <svg class="social-link-svg" width="20px" height="20px">
                   <use href="./image/icons.svg#facebook"></use>
                 </svg>
@@ -392,7 +392,7 @@
             </li>
 
             <li>
-              <a href="" aria-label="Socialmedia" class="footer-social-link">
+              <a href="https://www.linkedin.com/" aria-label="Socialmedia" class="footer-social-link" target="_blank" rel="noopener noreferrer">
                 <svg class="social-link-svg" width="20px" height="20px">
                   <use href="./image/icons.svg#linkedin"></use>
                 </svg>
@@ -400,7 +400,7 @@
             </li>
           </ul>
         </div>
-      
+        
         
           <form class="subscribe-form">
           <p class="subscribe-form-title">Подпишитесь на рассылку</p>
