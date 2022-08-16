@@ -19,9 +19,7 @@
     ),
     url(../image/background/Img@1x_M.jpg);
 
-  @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx){  
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){  
     background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -39,9 +37,7 @@
     ),
     url(../image/background/Img@1x_T.jpg);
 
-    @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx){  
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){  
     background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
@@ -63,10 +59,8 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../image/background/Img@1x_D.jpg);
-    
-    @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx){  
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx){  
     background-image: linear-gradient(
       to right,
       rgba(47, 48, 58, 0.4),
