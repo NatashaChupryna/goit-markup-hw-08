@@ -465,6 +465,7 @@ img {
 }
 
 .header-container {
+  width: 100%;
   padding-top: 16px;
   padding-right: 10px;
   padding-bottom: 16px;
@@ -857,15 +858,12 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-@media screen and (min-width: 480px) {
-  .benefits_icon {
-    margin-bottom: 30px;
-  }
+  margin-bottom: 30px;
 }
 @media screen and (min-width: 768px) {
   .benefits_icon {
     width: 354px;
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
