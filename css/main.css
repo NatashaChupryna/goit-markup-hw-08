@@ -1162,6 +1162,8 @@ img {
 }
 
 .clients-list-item {
+  -ms-flex-preferred-size: calc((100% - 30px) / 2);
+      flex-basis: calc((100% - 30px) / 2);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1169,6 +1171,12 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .clients-list-item {
+    -ms-flex-preferred-size: calc((100% - 60px) / 3);
+        flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .clients-link {
