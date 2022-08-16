@@ -72,6 +72,7 @@ padding-top: 60px;
 .portfolio-card-list {
   padding: 0;
   margin-top: 40px;
+  margin-bottom: 0;
 
   @media screen and (min-width:768px){
     margin-top: 30px;
@@ -85,7 +86,7 @@ margin: 0;
 
 .portfolio-card {
   margin-bottom: 30px;
-  
+&:last-child{margin-bottom: 0;}
 
   &:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
