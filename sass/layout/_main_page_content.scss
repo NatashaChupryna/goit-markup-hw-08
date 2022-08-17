@@ -126,7 +126,7 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    justify-content: center;
     padding-left: 0;
     margin-top: 0;
     margin-bottom: 0;
@@ -160,13 +160,12 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 30px;
-  
+
  @media screen and (min-width: 480px) {
     width: 450px;}
 
   @media screen and (min-width: 768px) {
     width: 354px;
-    margin-bottom: 0;
   }
 
   @media screen and (min-width: 1200px) {
@@ -227,7 +226,7 @@
 
 .specialization_list {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding-left: 0;
   gap: 30px;
   margin-top: 0;
@@ -420,6 +419,7 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 
   @media screen and (min-width: 1200px) {
@@ -428,13 +428,16 @@
 }
 
 .clients-list-item {
-  flex-basis: calc((100% - 30px) / 2 );
+  flex-basis: 210px;
   display: flex;
   justify-content: center;
   text-align: center;
 
   @media screen and (min-width: 768px){ 
-      flex-basis: calc((100% - 60px) / 3 );
+      flex-basis: 226px;
+  }
+    @media screen and (min-width: 1200px){ 
+      flex-basis: 170px;
   }
 }
 
